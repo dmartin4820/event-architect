@@ -2,8 +2,8 @@
 
 ## Bring your <em>best</em> Private Parties to Public Events!
 
-[Open](https://dmartin4820.github.io/event-architect/) <strong>Event Architect</strong>:
-<code>[https://dmartin4820.github.io/event-architect/](https://dmartin4820.github.io/event-architect/)</code>
+[Open](https://stark-crag-36907.herokuapp.com/) <strong>Event Architect</strong>:
+<code>[https://stark-crag-36907.herokuapp.com/)</code>
 
 ![Event Architect demonstration gif](./assets/gifs/e-a_demo.gif)
 
@@ -31,7 +31,7 @@ Simply point your browser to:
 
 * Event Architect will soon add to a new Member's aid by offering a live, local events feed from the API at TicketMaster.com.
 * Following an event allows you to create a new party on your Member Dashboard.
-* Search using (List.js)[https://listjs.com/] and (Browserify)[https://browserify.org/]. Browserify lets you require('modules') in the browser by bundling up all of your dependencies.
+* Search using [List.j](https://listjs.com/) and [Browserify](https://browserify.org/). Browserify lets you require('modules') in the browser by bundling up all of your dependencies.
 * Invite attendees to the Event Planning Page and they can join in adding details to help organize your party.
 * Follow other Members and join them to organize future Event-going parties.
 * Your Member Dashboard stores all your Events, and all your contacts (Members you are following, and those who are following you).
@@ -97,13 +97,12 @@ YouTube.com
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ### Developer Usage
-1. Get your TicketMaster API key [here](https://developer.ticketmaster.com/)
-2. Clone <strong>Event Architect</strong> from our [GitHub repository](https://github.com/dmartin4820/event-architect)
-3. Inside your local directory:
+1. Clone <strong>Event Architect</strong> from our [GitHub repository](https://github.com/dmartin4820/event-architect)
+2. Inside your local directory:
 <code>npm install</code>
-4. If you need seed data:
-<code>node run seed</code>
-5. Launch <strong>Event Architect</strong>:
+3. If you need seed data:
+<code>npm run seed</code>
+4. Launch <strong>Event Architect</strong>:
 <code>node server.js</code>
 
 ## Badge
