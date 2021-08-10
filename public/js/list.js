@@ -58,7 +58,9 @@ function editListEl() {
 			const originalText = listItem.values().content;
 		
 			//Replace the list item with an input field for the user to specify their change
-			const inputElText = `<input type=text placeholder="${listItem.values().content}" id="input-id-${detail_id}"/>`
+			const inputElText = `<input type=text placeholder="
+			${listItem.values().content}" id="input-id-${detail_id}"/>`
+
 			listItem.values({
 				content: inputElText
 			});

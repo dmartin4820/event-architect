@@ -2,8 +2,8 @@
 
 ## Bring your <em>best</em> Private Parties to Public Events!
 
-[Open](https://stark-crag-36907.herokuapp.com/) <strong>Event Architect</strong>:
-<code>[https://stark-crag-36907.herokuapp.com/)</code>
+[Open Event Architect](https://stark-crag-36907.herokuapp.com/):
+<code>[https://stark-crag-36907.herokuapp.com/]</code>
 
 ![Event Architect demonstration gif](./assets/gifs/e-a_demo.gif)
 
@@ -11,16 +11,16 @@
 
 * [Installation](#installation)
 * [Usage](#usage)
+* [Example](#Example)
 * [Credits](#credits)
 * [License](#license)
-* [Example](#Example)
 
 ## Installation
 
 This app was designed and built to run in a basic Chrome browsing environment.
 
-Simply point your browser to:
-[https://dmartin4820.github.io/event-architect/](https://dmartin4820.github.io/event-architect/)     
+Simply point your browser to the [site](https://stark-crag-36907.herokuapp.com/)! 
+
 1. Become a member
 2. Begin planning
 3. Invite friends
@@ -31,7 +31,7 @@ Simply point your browser to:
 
 * Event Architect will soon add to a new Member's aid by offering a live, local events feed from the API at TicketMaster.com.
 * Following an event allows you to create a new party on your Member Dashboard.
-* Search using [List.j](https://listjs.com/) and [Browserify](https://browserify.org/). Browserify lets you require('modules') in the browser by bundling up all of your dependencies.
+* Search using [List.js](https://listjs.com/) and [Browserify](https://browserify.org/). Browserify lets you require('modules') in the browser by bundling up all of your dependencies.
 * Invite attendees to the Event Planning Page and they can join in adding details to help organize your party.
 * Follow other Members and join them to organize future Event-going parties.
 * Your Member Dashboard stores all your Events, and all your contacts (Members you are following, and those who are following you).
@@ -97,13 +97,28 @@ YouTube.com
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ### Developer Usage
-1. Clone <strong>Event Architect</strong> from our [GitHub repository](https://github.com/dmartin4820/event-architect)
+1. Clone <strong>Event Architect</strong> from our [GitHub repository](https://github.com/dmartin4820/event-architect). To do this run:
+
+	<code>git clone https://github.com/dmartin4820/event-architect.git</code>
+
 2. Inside your local directory:
-<code>npm install</code>
-3. If you need seed data:
-<code>npm run seed</code>
-4. Launch <strong>Event Architect</strong>:
-<code>node server.js</code>
+
+	<code>npm install</code>
+
+3. Setup the database:
+
+	<code>mysql -u root -p</code>
+	<code>mysql> SOURCE ./db/schema.sql</code>
+	<code>mysql> exit</code>
+
+4. Run the build scripts which create the browser friendly JS code (Browserify) and seed the event_db database:
+
+	<code>npm run build</code>
+
+5. Launch <strong>Event Architect</strong>:
+	<code>node server.js</code>
+	and navigate to 
+	<code>localhost:3001</code>
 
 ## Badge
 
